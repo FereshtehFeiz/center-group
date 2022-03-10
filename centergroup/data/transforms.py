@@ -9,6 +9,9 @@ from mmpose.core.post_processing import get_affine_transform
 from mmpose.datasets.builder import PIPELINES
 from mmpose.datasets.pipelines.bottom_up_transform import BottomUpRandomFlip, _resize_align_multi_scale, Compose, BottomUpRandomAffine
 
+
+""" ??? """ 
+
 def _get_pad_mask(original_img, center, scale, size_resized):
     pad_mask = (np.ones_like(original_img) * 255).astype(np.uint8)
     trans = get_affine_transform(center, scale, 0, size_resized)
