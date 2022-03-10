@@ -4,6 +4,8 @@ import torch.nn.functional as F
 from mmpose.core.evaluation import get_multi_stage_outputs
 import numpy as np
 
+# probably I should modify this part or review it
+
 def nms(heatmaps, nms_kernel, nms_padding):    
     nms_pool = torch.nn.MaxPool2d(nms_kernel, 1, nms_padding)
     maxm = nms_pool(heatmaps)
