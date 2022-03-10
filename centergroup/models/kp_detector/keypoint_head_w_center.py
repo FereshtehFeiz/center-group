@@ -2,6 +2,8 @@ import torch
 from mmpose.models.heads.ae_higher_resolution_head import AEHigherResolutionHead
 from mmpose.models.builder import HEADS
 
+""" probably I should modify this part of code
+
 @HEADS.register_module()
 class AEHigherResolutionHeadWithRoot(AEHigherResolutionHead):
     """Modified HigherHRNet head to accomodate center predictions. 
